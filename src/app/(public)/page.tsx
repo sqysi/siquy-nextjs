@@ -14,11 +14,6 @@ const BASE_URL =
   process.env.NEXT_PUBLIC_API_BASE_URL || "http://localhost:3000";
 
 // Component Footer đơn giản (để giữ page.tsx gọn gàng)
-const Footer = () => (
-    <footer className="bg-gray-800 text-white p-6 mt-12 text-center text-sm">
-        <p>Thiết kế bởi Gemini. Mọi quyền được bảo lưu.</p>
-    </footer>
-);
 
 export default function HomePage() {
   const [categories, setCategories] = useState<Category[]>([]);
@@ -121,7 +116,7 @@ export default function HomePage() {
   return (
     <div className="bg-white min-h-screen">
 
-        <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16 py-12">
+        <main className="w-full space-y-16">
             
             {/* Hero Slider */}
             <HeroSlider />

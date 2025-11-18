@@ -17,7 +17,7 @@ export default function RootLayout({
       <body className="bg-white text-gray-800 font-sans">
         <Providers /> {/* ⬅ THÊM DÒNG NÀY */}
         <Navbar />
-        <main className="mt-4">{children}</main>
+        <main className="">{children}</main>
         <Footer />
       </body>
     </html>
